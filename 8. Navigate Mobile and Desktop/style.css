@@ -1,0 +1,227 @@
+.bar1{
+    background-color: #044364;
+}
+
+ .menu-bar{
+    display: flex;
+    gap: 10px;
+    z-index: 0;
+    justify-content: space-between;
+}
+
+.menu-bar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    gap:20px;
+    text-transform: uppercase;
+} 
+ .menu-bar ul li a{
+    display: block;
+    text-decoration: none;
+    color:white;
+
+}
+
+.menu-bar ul li a img{
+    height: 50px;
+}
+
+.menu-bar ul li a:hover{
+    color: gold;
+}
+
+.menu-bar ul li{
+    position: relative;
+}
+
+.menu-bar ul li ul.sub-menu{
+    position: absolute;
+    left: 0px;
+    height: auto;
+    width: 100px;
+    display: none;
+    background-color:rgba(3, 7, 33, 0.577);
+    text-align: center;
+}
+
+.menu-bar ul li ul.active1{
+    display: block;
+}
+
+.menu-bar ul.ul1{
+    display: none;
+}
+
+.menu-bar ul.ul3 li:not(.phone){
+    display: none;
+}
+ .left-menu{
+    position: fixed;
+    width: 180px;
+    height: 100%;
+    left: -195px;
+    top: 0;
+    background-color: #044364;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.active{
+    left: 0;
+}
+
+.overlay{
+    background-color:rgba(255, 255, 255, 0.153);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+}
+
+.left-menu .left-menu-bar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-menu .left-menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+    letter-spacing:1px;
+    font-size: 18px;
+    display: block;
+    padding: 20px;
+} 
+ .left-menu .left-menu-bar ul li a:hover{
+    color: gold;
+}
+.left-menu .image img{
+    width: 80px;
+}
+.left-menu .image{
+    height: 150px;
+    border-bottom: 2px solid rgb(149, 134, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul3 .sub-menu{
+    padding:10px 0;
+    line-height: 30px;
+    margin-top: 0px;
+}
+
+.ul3 .sub-menu li a{
+    color:white;
+}
+.childPhone{
+    display: none;
+}
+.active2{display: block;}
+.childPhone{
+   width: 100%;
+   background-color:rgba(3, 7, 33, 0.577);
+}
+.childPhone li:hover a{
+    background-color: rgb(100, 96, 96);
+}
+.childPhone li a{
+    text-indent: 30px;
+}
+
+
+ @media (min-width:310px){
+    .menu-bar ul.ul3 li:not(.phone){
+        display: none;
+        gap: 2px;
+    }
+    .menu-bar{
+        gap: 9px;
+    }
+    .menu-bar ul{
+        gap: 18px;
+    }
+    .menu-bar ul li a{
+        font-size: 17px;
+    }
+   .menu-bar .ul2 img{
+    height: 33px;
+   }
+   .menu-bar ul.ul1{
+    display: none;
+} 
+
+ .left-menu{
+    width: 160px;
+}
+.left-menu .image img{
+    width: 70px;
+}
+.left-menu .image{
+    height: 120px;
+}
+} 
+ /* Small devices ( landscape phones , 576px and up ) */ 
+ @media (min-width:576px){ 
+    .menu-bar ul.ul3 li:not(.phone){
+        display: block;
+        gap: 7px;
+    } 
+    .left-menu{
+        width: 190px;
+    }
+    .left-menu .image img{
+        width: 80px;
+    }
+    .left-menu .image{
+        height: 145px;
+    }
+   
+
+ } 
+ /* Medium devices ( tablets , 768px and up ) */ 
+ /* @media (min-width:768px){
+
+ } */
+ /* Large devices ( desktops , 992px and up ) */ 
+ @media (min-width:992px){
+    .menu-bar ul.ul1{
+        display: flex;
+    }
+    .menu-bar{
+        justify-content: center;
+    }
+    .menu-bar ul{
+        gap: 20px;
+    }
+    .menu-bar{
+        gap: 5px;
+    }
+    .menu-bar ul.ul4 .phone{
+        display: none;
+    }
+ }
+  /* X - Large devices ( large desktops , 1200px and up )*/ 
+  @media (min-width:1200px){
+    .menu-bar ul{
+        gap: 60px;
+    }
+    .menu-bar{
+        gap: 10px;
+    }
+  } 
+  /* XX - Large devices ( larger desktops , 1400px and up ) */ 
+  @media (min-width:1400px ){
+    .menu-bar ul{
+        gap: 70px;
+    }
+    .menu-bar{
+        gap: 20px;
+    }
+  }

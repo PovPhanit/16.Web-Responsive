@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: #ecf4fb;
+}
+.wrapper {
+	width: 80%;
+	margin: 50px auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 30px;
+}
+.wrapper img {
+	/* 100% from 250px in grid  */
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	transition: 1s ease;
+}
+.wrapper img:hover {
+	transform: scale(0.9);
+}
